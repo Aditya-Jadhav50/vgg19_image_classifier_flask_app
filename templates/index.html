@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Upload and Predict{% endblock %}
+
+{% block content %}
+<h1>Upload an image for VGG19 Prediction</h1>
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" required />
+    <button type="submit">Predict</button>
+</form>
+
+{% if filename %}
+    <h2>Prediction: {{ prediction }}</h2>
+    <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Uploaded Image" />
+{% endif %}
+{% endblock %}
