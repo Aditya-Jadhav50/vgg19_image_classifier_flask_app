@@ -1,4 +1,4 @@
-# vgg19_image_classifier_flask_app# VGG19 Image Classifier Flask App
+## VGG19 Image Classifier Flask App
 
 This project is a Flask web application that performs image classification using a pretrained VGG19 model. Users upload images through a simple web interface, and the app predicts the top ImageNet class labels for the uploaded image.
 
